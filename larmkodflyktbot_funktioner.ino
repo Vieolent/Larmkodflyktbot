@@ -1,4 +1,7 @@
- float average(float value, float array[]){
+ //funktion som jämnar ut sensordata genom att ta medelvärdet av de senaste 10 värdena
+ //Input: float med rå sensorvärde och array där den kan skriva ner och ta medelvärdet på sensorvärdena
+ //Output: Flyttal som är utjämnade
+float average(float value, float array[]){
   array[9] = value;
    float sum = 0;
   for(int i = 0; i < 10; i++){
@@ -8,6 +11,9 @@
   return sum/10;
 }
 
+//funktion som tar in sensordata från högra sensoren
+//Input: inga
+//Output: rå sensordata
 float getDistance2(){
 	digitalWrite(2, LOW);  
 	delayMicroseconds(2);  
@@ -23,6 +29,9 @@ float getDistance2(){
   return distance2;
 }
 
+//funktion som tar in sensordata från vänstra sensoren
+//Input: inga
+//Output: rå sensordata
 float getDistance1(){
 	digitalWrite(7, LOW);  
 	delayMicroseconds(2);  
