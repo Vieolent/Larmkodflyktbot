@@ -4,7 +4,6 @@ Projekt: Larmkodflyktbot
 Senast uppdaterad: 2025-05-08
 */
 
-
 //Bibliotek för servo
 #include <Servo.h>
 //Bibliotek för keypad
@@ -129,6 +128,3 @@ void loop() {
 
   }
 }
-/*
-
-*/
