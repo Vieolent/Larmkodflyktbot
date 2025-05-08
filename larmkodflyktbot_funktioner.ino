@@ -1,4 +1,6 @@
- //funktion som jämnar ut sensordata genom att ta medelvärdet av de senaste 10 värdena
+//Dokument för funktioner som används i larmkodflyktbot.ino
+
+//funktion som jämnar ut sensordata genom att ta medelvärdet av de senaste 10 värdena
  //Input: float med rå sensorvärde och array där den kan skriva ner och ta medelvärdet på sensorvärdena
  //Output: Flyttal som är utjämnade
 float average(float value, float array[]){
